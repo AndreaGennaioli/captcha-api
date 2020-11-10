@@ -16,7 +16,7 @@ fetch('https://captchaapi.herokuapp.com/generator').then(async (response) => {
 ## Esempio Risposta dell'api
 ```json
 {
-	image: "https://captchaapi.herokuapp.com/captcha/hhp33h.png",
-	text: "hhp33h"
+	"image": "https://captchaapi.herokuapp.com/captcha/hhp33h.png",
+	"text": "hhp33h"
 }
 ```
