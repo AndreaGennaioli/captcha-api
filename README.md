@@ -13,3 +13,10 @@ fetch('https://captchaapi.herokuapp.com/generator').then(async (response) => {
 	var key = data.key; // the captcha key in string
 });
 ```
+## Risposta dell'api
+```json
+{
+	"image": "http://localhost:52722/captcha/hhp33h.png",
+	"text": "hhp33h"
+}
+```
