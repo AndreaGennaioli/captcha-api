@@ -29,7 +29,7 @@ app.get('/generator', (req, res) => {
 	fs.createWriteStream('./public/captcha/' + key + '.png').write(canvas.toBuffer()); // creating the captcha file
 	//* writing the response
 	res.json({
-		image: `http://localhost:${port}/captcha/${key}.png`,
+		image: `https://captchaapi.herokuapp.com/captcha/${key}.png`,
 		text: key
 	})
 
