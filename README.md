@@ -1,7 +1,7 @@
 # captcha-api
 
 Una semplice web api.
-Dopo aver fatto una richiesta a `https://captchaapi.herokuapp.com/generator` l'api rimanderà indietro come risposta:
+Dopo aver fatto una richiesta a `https://captchaapi.herokuapp.com/generator` l'api rimanderà indietro come risposta in un oggetto JSON:
 * **un'immagine**: sfondo biando con il codice scritto in nero (200x100px);
 * **codice del captcha in stringa**.
 
