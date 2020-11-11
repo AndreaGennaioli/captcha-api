@@ -7,10 +7,11 @@ Dopo aver fatto una richiesta a `https://captchaapi.herokuapp.com/generator` l'a
 
 ## Esempio per una Richiesta
 ```js
-fetch('https://captchaapi.herokuapp.com/generator').then(async (response) => {
-	var data = JSON.parse(await response.json());
+fetch('https://captchaapi.herokuapp.com/generator')
+.then(response => response.json()).then( res => {
+	var data = res;
 	var image_url = data.image; // the captcha image url (200x100px)
-	var key = data.key; // the captcha key in string
+	var key = data.text; // the captcha key in string
 });
 ```
 ## Esempio Risposta dell'api
