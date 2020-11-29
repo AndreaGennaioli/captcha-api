@@ -28,7 +28,7 @@ app.get('/generator', (req, res) => {
 	res.json({
 		image: `https://captchaapi.herokuapp.com/captcha/${key}.png`,
 		text: key
-	})
+	}).send();
 
 	//* deleting the captcha file after 120 seconds
 	setTimeout(() => {
