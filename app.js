@@ -3,10 +3,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 const fs = require('fs');
 const path = require('path');
-const {
-	Image,
-	createCanvas
-} = require('canvas');
+const { createCanvas } = require('canvas');
 
 app.use(express.static(path.join(__dirname, './public')))
 app.get('/generator', (req, res) => {
